@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Validacion</title>
+</head>
+<body>
+    <!-- Creamos la cabecera de la página -->
+    <header>
+        <h1>Validación de datos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Formularios generales</a></li>
+                <ul>
+                    <li><a href="registro.html">Formulario de registro a un boletín de noticias</a></li>
+                    <li><a href="lenguajes.html">Formulario de lenguajes HTML</a></li>
+                    <li><a href="cursos.html">Formularios de cursos</a></li>
+                </ul>
+                <li><a href="#correo">Agregar correo electrónico</a></li>
+                <li><a href="#clave">Colocar contraseña</a></li>
+                <li><a href="#confirmarClave">Repetir contraseña</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <form action="#" method="post">
+        <fieldset>
+            <h1>Formulario de validación</h1>
+            <!-- Creamos el campo de registro de gmail -->
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" placeholder="Escribe tu gmail" required>
+            <br><br>
+
+            <!-- Creamos el campo para la contraseña -->
+            <label for="clave">Contraseña:</label>
+            <input type="password" id="clave" name="clave" pattern=".{6,12}" placeholder="Ingrese contraseña">
+            <br><br>
+
+            <!-- Creamos el campo para validar la contraseña -->
+            <label for="confirmarClave">Confirmar contraseña:</label>
+            <input type="password" id="confirmarClave" name="confirmarClave" pattern=".{6,12}" placeholder="Ingrese contraseña de nuevo">
+            <br><br>
+
+            <!-- Creamos el botón para guardar -->
+            <button type="submit">Guardar</button>
+        </fieldset>
+    </form>
+</body>
+</html>
