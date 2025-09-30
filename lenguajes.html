@@ -10,6 +10,9 @@
         <nav>
             <ul>
                 <li><a href="index.html">Formularios generales</a></li>
+                <li><a href="#foto">Subir foto</a></li>
+                <li><a href="#lenguajes">Lenguajes conocidos</a></li>
+                <li><a href="#horas">Horas de programación</a></li>
             </ul>
         </nav>
     </header>
@@ -20,8 +23,30 @@
             <!-- Creamos el campo para subir la foto de perfil -->
             <label for="foto">Subir tu foto de perfil:</label>
             <input type="file" id="foto" name="fotoPerfil" accept="image/*" required>
-            
-            <button type="submit">Enviar</button>
+            <br><br>
+
+            <!-- Creamos el campo de selección múltiple -->
+            <p id="lenguajes">¿Qué lenguajes conoces?</p>
+            <label>
+            <input type="checkbox" name="conocidos[]" value="html">
+            HTML</label><br>
+            <label><input type="checkbox" name="conocidos[]" value="css">
+            CSS</label><br>
+            <label><input type="checkbox" name="conocidos[]" value="js">
+            JavaScript</label><br>
+            <label><input type="checkbox" name="conocidos[]" value="python">
+            Python</label><br>
+            <label><input type="checkbox" name="conocidos[]" value="java">
+            Java</label><br>
+            <br><br>
+
+            <!-- Creamos el campo para ingresar las horas de programación -->
+            <label for="horas">¿Cuántas horas de programación estudias al día?</label>
+            <input type="number" id="horas" min="0" max="24" name="horasDia" required>
+            <br><br>
+
+            <!-- Creamos el botón para guardar -->
+            <button type="submit">Guardar</button>
         </fieldset>
     </form>
 </body>
