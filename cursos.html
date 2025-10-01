@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cursos</title>
+</head>
+<body>
+    <!-- Creamos la cabecera de la página -->
+    <header>
+        <h1>Cursos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Formularios generales</a></li>
+                <ul>
+                    <li><a href="registro.html">Formulario de registro a un boletín de noticias</a></li>
+                    <li><a href="lenguajes.html">Formulario de lenguajes HTML</a></li>
+                    <li><a href="validacion.html">Formulario de validación de datos</a></li>
+                </ul>
+                <li><a href="#nombres">Agregar nombres</a></li>
+                <li><a href="#apellidos">Agregar apellidos</a></li>
+                <li><a href="#dni">Agregar DNI</a></li>
+                <li><a href="#correo">Agregar correo electrónico</a></li>
+                <li><a href="#curso">Seleccionar curso a inscribirse</a></li>
+                <li><a href="#modalidad">Seleccionar modalidad</a></li>
+                <li><a href="#horarios">Seleccionar horarios</a></li>
+                <li><a href="#comentario">Colocar comentario</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form action="#" method="post">
+        <fieldset>
+            <h1>Formulario de inscripción a cursos</h1>
+            <!-- Creamos el campo de registro de nombre -->
+            <label for="nombres">Nombres:</label>
+            <input type="text" id="nombres" name="nombre" placeholder="Escribe tu nombre" required>
+            <br><br>
+
+            <!-- Creamos el campo de registro de apellido -->
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellido" placeholder="Escribe tu apellido" required>
+            <br><br>
+
+            <!-- Creamos el campo para ingresar el DNI -->
+            <label for="dni">DNI:</label>
+            <input type="number" id="dni" min="8" name="dni" placeholder="Escribe tu DNI" required>
+            <br><br>
+
+            <!-- Creamos el campo de registro de gmail -->
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" placeholder="Escribe tu gmail" required>
+            <br><br>
+
+            <!-- Creamos el selector de curso -->
+            <label for="curso">Curso:</label>
+            <select id="curso" name="curso">
+                <option>Introducción al Desarrollo Web</option>
+                <option>Desarrollo de Software Orientado a Objetos</option>
+                <option>Cálculo en una Variable</option>
+            </select>
+            <br><br>
+
+            <!-- Creamos el selector de modalidad -->
+             <label id="modalidad">Seleccionar modalidad:</label>
+             <input type="radio" id="presencial" name="turno" value="presencial">
+             <label>Presencial</label>
+             <input type="radio" id="virtual" name="turno" value="virtual">
+             <label>Virtual</label>
+             <br><br>
+
+            <!-- Creamos el selector de horarios -->
+            <p id="horarios">Horarios disponibles:</p>
+            <label>
+            <input type="checkbox" name="horarios[]" value="manana">
+            Mañana</label><br>
+            <label><input type="checkbox" name="horarios[]" value="tarde">
+            Tarde</label><br>
+            <label><input type="checkbox" name="horarios[]" value="noche">
+            Noche</label><br>
+            <br><br>
+
+            <!-- Creamos la sección para colocar comentario -->
+            <label for="comentario">Comentario adicional:</label>
+            <textarea id="comentario" name="comentario"></textarea>
+            <br><br>
+
+            <!-- Creamos el botón para suscribirse y reestablecer -->
+            <button type="submit">Enviar</button>
+            <button type="submit">Reestablecer</button>
+        </fieldset>
+    </form>
+</body>
+</html>
